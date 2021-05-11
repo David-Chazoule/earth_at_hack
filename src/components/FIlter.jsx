@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react';
 
 import TechnoCard from './TechnoCard';
+import Header from './Header';
 
 import './Filter.css';
+import App from '../App';
 
 export default function Filter() {
-
+  const Appname = 'Mars°Ma°Zon';
   const [technos, setTechnos] = useState([]);
   const [showTechnos, setShowTechnos] = useState(false);
   const [selectedTechno, setSelectedTechno] = useState('');
@@ -26,6 +28,7 @@ export default function Filter() {
   
   return (
     <div>
+      <Header name={Appname} />
     <div className="FilterButtonContainer">
       <select className="TechnoSelect" onClick={handleSelect}>
         <option value="">Select a category...</option>
