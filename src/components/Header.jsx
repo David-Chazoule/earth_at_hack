@@ -5,8 +5,8 @@ function Header({ name }) {
 
   return (
     <div className="Header-container">
-      <h1 className="Header-Title">{name}</h1>
-      <h2 className="slogan-title">Les meilleurs produits de la galaxie</h2>
+      <h1 className="Header-Title">Mars°Ma°Zon</h1>
+      <h2 className="slogan-title">{name}</h2>
     </div>
   );
 }
