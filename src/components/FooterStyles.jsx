@@ -1,7 +1,7 @@
 import styled from 'styled-components';
    
 export const Box = styled.div`
-  background: black;
+  background: #404654;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -18,14 +18,14 @@ export const Container = styled.div`
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
-    /* background: red; */
+   
 `
    
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 60px;
+  
 `;
    
 export const Row = styled.div`
@@ -41,10 +41,11 @@ export const Row = styled.div`
 `;
    
 export const FooterLink = styled.a`
-  color: #fff;
+  color: white;
   margin-bottom: 20px;
   font-size: 18px;
   text-decoration: none;
+ 
    
   &:hover {
       color: #CBA646;
@@ -54,7 +55,9 @@ export const FooterLink = styled.a`
    
 export const Heading = styled.p`
   font-size: 24px;
-  color: #fff;
-  margin-bottom: 40px;
+  color: white;
+  // margin-bottom: 40px;
   font-weight: bold;
+  text-decoration: underline white;
+  text-underline-offset: 3px;
 `;

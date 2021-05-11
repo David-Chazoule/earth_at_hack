@@ -11,9 +11,10 @@ import {
 const Footer = () => {
   return (
     <Box>
-      <h2 style={{ color: "white", 
+      <h2 style={{ color: "black", 
                    textAlign: "center", 
-                   fontFamily: "Yeon Sung, sans serif" 
+                   fontFamily: "Yeon Sung, sans serif",
+                   fontSize: "30px",
                    }}>
         Mars°Ma°Zon
       </h2>
@@ -21,15 +22,15 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>About Us</Heading>
-            <FooterLink href="#">Chaz</FooterLink>
-            <FooterLink href="#">Paul-E</FooterLink>
-            <FooterLink href="#">AL</FooterLink>
+            <FooterLink href="https://www.linkedin.com/in/david-chazoule-7b7ba81b5/" target="_blank">Chaz</FooterLink>
+            <FooterLink href="https://www.linkedin.com/in/paul-emmanuel-legrand-3a07b4a9/" target="blank">Paul-E</FooterLink>
+            <FooterLink href="https://www.linkedin.com/in/anne-laure-ferrari-480676209/" target="blank">AL</FooterLink>
           </Column>
           <Column>
             <Heading>Liens utiles</Heading>
-            <FooterLink href="#">Nasa</FooterLink>
-            <FooterLink href="#https://starwars.fandom.com/fr/wiki/Galaxie">Galaxies</FooterLink>
-            <FooterLink href="#">Blabla</FooterLink>
+            <FooterLink href="">Nasa</FooterLink>
+            <FooterLink href="https://starwars.fandom.com/fr/wiki/Galaxie" target="_blank">Galaxies</FooterLink>
+            <FooterLink href="">Blabla</FooterLink>
            
           </Column>
           <Column>
