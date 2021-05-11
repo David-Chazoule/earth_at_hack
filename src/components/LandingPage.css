@@ -1,0 +1,60 @@
+.landingPage-container{
+  width: 100%;
+  display: flex;
+ 
+
+}
+
+.landing-intro {
+  color: white;
+  font-size: 14px;
+  /* margin-bottom: 140px; */
+  margin-top: 100px;
+  
+  
+}
+
+.txt-intro{
+  display: inline-block;
+  margin: 0 80px 0px 80px;
+}
+
+ .video-box{
+  
+  /* margin-top: 300px; */
+  margin-bottom: 0px;
+  width: 100%;
+  margin-bottom: 0;
+  height: 100%;
+} 
+.Mars-video {
+/* position: absolute ; */
+width: 100%;
+height: 100vh;
+overflow: hidden;
+object-fit: cover;
+/* transform: translate(-50%, -50%); */
+/* z-index: -1;  */
+margin-bottom: 0;
+
+}
+
+
+.btn-enter{
+  color: black;
+  width: 250px;
+  height: 50px;
+  margin-top: 380px;
+}
+
+.intro-btn-box{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  
+  
+}
