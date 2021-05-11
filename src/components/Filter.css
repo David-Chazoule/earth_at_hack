@@ -13,3 +13,8 @@
 .TechnoSelect{
   margin-top: 20px;
 }
+
+.FilterBG{
+/* background :linear-gradient(80deg, #e38a61, rgb(42, 23, 1)); */
+background-color: rgb(5, 5, 5);
+}
