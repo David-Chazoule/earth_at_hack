@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 import Mars3 from './Assets/Mars.mp4';
 import './LandingPage.css';
 
@@ -21,7 +21,9 @@ function LandingPage (){
         
       
       {/* <div className="landing-btn"> */}
+        <Link to="/technos">
         <button className="btn-enter" type="button">ENTER</button>
+        </Link>
       {/* </div> */}
       </div>
       </div>
