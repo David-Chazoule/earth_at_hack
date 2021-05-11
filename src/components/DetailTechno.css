@@ -9,4 +9,5 @@
 .DetailTechnoImage{
   height: 200px;
   width: 200px;
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,.24);
 }
