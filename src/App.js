@@ -3,6 +3,7 @@ import './App.css';
 import DetailCard from './components/DetailCard';
 import { Switch, Route } from 'react-router';
 import LandingPage from './components/LandingPage';
+import Sellers from './components/Sellers';
 
 function App() {
   
@@ -16,6 +17,9 @@ function App() {
       </Route>
       <Route path="/technos/:id">
         <DetailCard />
+      </Route>
+      <Route path="/sellers">
+        <Sellers />
       </Route>
     </Switch>
   );
