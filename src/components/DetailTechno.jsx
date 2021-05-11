@@ -15,16 +15,22 @@ const handleClick = () => {
 
 }
   return (
+    <div>
+
     <div className="DetailTechnoContainer">
       <h2>{props.name}</h2>
       <img src={props.image} alt="DetailTechnoImage" className="DetailTechnoImage"/>
       <p>{props.presentation}</p>
       <button onClick={handleClick}>I WANT IT FOR MY PLANET</button> 
-      {showShopperForm &&
-      <ShopperForm /> }
       <Link to="/technos">
       <button className="DetailTechnoButton">GO BACK</button>
-      </Link>
+    </Link>
+    </div>
+    <div>
+      {showShopperForm &&
+      <ShopperForm /> }
+
+    </div>
     </div>
   )
 }
