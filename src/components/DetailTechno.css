@@ -1,4 +1,8 @@
 .DetailTechnoContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 70vh;
   width: 60vw;
   border: solid 1px black;
@@ -9,5 +13,6 @@
 .DetailTechnoImage{
   height: 200px;
   width: 200px;
-  
+  box-shadow: 0 8px 24px 0 rgba(0,0,0,.24);
 }
+

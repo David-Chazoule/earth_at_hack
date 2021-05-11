@@ -1,14 +1,23 @@
+import Filter from './components/FIlter';
 import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import DetailCard from './components/DetailCard';
+import { Switch, Route } from 'react-router';
+import LandingPage from './components/LandingPage';
 
 function App() {
-  const Appname = 'Mars°Ma°Zon';
+  
   return (
-    <div className="App">
-       <Header name={Appname} />
-       <Footer />
-    </div>
+    <Switch>
+      <Route exact path="/">
+        <LandingPage />
+      </Route>
+      <Route exact path="/technos">
+        <Filter />
+      </Route>
+      <Route path="/technos/:id">
+        <DetailCard />
+      </Route>
+    </Switch>
   );
 }
 
