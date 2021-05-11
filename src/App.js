@@ -1,12 +1,19 @@
-import React from 'react';
-import LandingPage from './components/LandingPage';
+import Filter from './components/FIlter';
 import './App.css';
+import DetailCard from './components/DetailCard';
+import { Switch, Route } from 'react-router';
 
 function App() {
+  
   return (
-    <div className="App">
-      <LandingPage />
-    </div>
+    <Switch>
+      <Route exact path="/">
+        <Filter />
+      </Route>
+      <Route path="/technos/:id">
+        <DetailCard />
+      </Route>
+    </Switch>
   );
 }
 
