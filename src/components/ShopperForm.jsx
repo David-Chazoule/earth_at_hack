@@ -3,14 +3,24 @@ import './ShopperForm.css';
 
 function ShopperForm() {
   const [userFirstName, setUserFirstName] = useState('');
-  const [userLastName, setUserLastName] = useState();
-  const [userEmail, setUserEmail] = useState();
-  const [userComment, setUserComment] = useState();
-
-  const postComment = { firstname: userFirstName, lastname: userLastName, email: userEmail, comment: userComment };
+  const [userLastName, setUserLastName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
+  const [userComment, setUserComment] = useState('');
   
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const postComment = { firstname: userFirstName, lastname: userLastName, email: userEmail, comment: userComment };
+
+    console.log(postComment)
+
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(postComment),
+    };
+    fetch('http://localhost:5000/contacts', requestOptions).then((response) => response.json());
+
     setUserFirstName('');
     setUserLastName('');
     setUserEmail('');
