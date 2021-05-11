@@ -2,9 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  min-height: 80vh;
 }
 
 .FilterButtonContainer{
   display: flex;
   justify-content: center;
+}
+
+.TechnoSelect{
+  margin-top: 20px;
 }

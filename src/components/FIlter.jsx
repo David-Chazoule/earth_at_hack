@@ -29,6 +29,7 @@ export default function Filter() {
   return (
     <div>
       <Header name={Appname} />
+    <div className="FilterBG">
     <div className="FilterButtonContainer">
       <select className="TechnoSelect" onClick={handleSelect}>
         <option value="">Select a category...</option>
@@ -49,6 +50,7 @@ export default function Filter() {
     .map((techno)=>{
       return <TechnoCard name={techno[1]} image={techno[10]} id={techno[12]} />
     })}
+    </div>
     </div>
     </div>
   )
