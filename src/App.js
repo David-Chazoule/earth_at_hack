@@ -1,12 +1,19 @@
+import Filter from './components/FIlter';
 import './App.css';
-import Header from './components/Header';
+import DetailCard from './components/DetailCard';
+import { Switch, Route } from 'react-router';
 
 function App() {
   const Appname = 'Mars°Ma°Zon';
   return (
-    <div className="App">
-       <Header name={Appname} />
-    </div>
+    <Switch>
+      <Route exact path="/">
+        <Filter />
+      </Route>
+      <Route path="/technos/:id">
+        <DetailCard />
+      </Route>
+    </Switch>
   );
 }
 
