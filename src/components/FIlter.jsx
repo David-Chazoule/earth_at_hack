@@ -7,7 +7,7 @@ import './Filter.css';
 import App from '../App';
 
 export default function Filter() {
-  const Appname = 'Mars°Ma°Zon';
+  const Appname = 'The best tech-products in the galaxy';
   const [technos, setTechnos] = useState([]);
   const [showTechnos, setShowTechnos] = useState(false);
   const [selectedTechno, setSelectedTechno] = useState('');

@@ -24,7 +24,7 @@ export default function DetailCard() {
 
   return (
     <div>
-      <Header />
+      <Header name={technoDetails[1]}/>
     <div className="DetailCardContainer">
      <DetailTechno name={technoDetails[1]} image={technoDetails[10]} presentation={technoDetails[3]} />
     </div>
