@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ShopperForm from '../components/ShopperForm';
 
+import { Link } from 'react-router-dom'
+
 import './DetailTechno.css';
 
 
@@ -20,6 +22,9 @@ const handleClick = () => {
       <button onClick={handleClick}>I WANT IT FOR MY PLANET</button> 
       {showShopperForm &&
       <ShopperForm /> }
+      <Link to="/technos">
+      <button className="DetailTechnoButton">GO BACK</button>
+      </Link>
     </div>
   )
 }
