@@ -7,6 +7,7 @@ import {
   FooterLink,
   Heading,
 } from "./FooterStyles";
+  import galaxy from "./Assets/images/galaxie.png"
   
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
       <h2 style={{ color: "black", 
                    textAlign: "center", 
                    fontFamily: "Yeon Sung, sans serif",
-                   fontSize: "30px",
+                   fontSize: "40px",
                    }}>
         Mars°Ma°Zon
       </h2>
@@ -28,9 +29,9 @@ const Footer = () => {
           </Column>
           <Column>
             <Heading>Liens utiles</Heading>
-            <FooterLink href="">Nasa</FooterLink>
-            <FooterLink href="https://starwars.fandom.com/fr/wiki/Galaxie" target="_blank">Galaxies</FooterLink>
-            <FooterLink href="">Blabla</FooterLink>
+            <FooterLink href="https://www.leboncoin.fr/" target="_blank">Le très bon coin</FooterLink>
+            <FooterLink href="https://starwars.fandom.com/fr/wiki/Galaxie" target="_blank">Galaxies voisines</FooterLink>
+            <FooterLink href="https://intl.startrek.com/" target="_blank">Star Trek</FooterLink>
            
           </Column>
           <Column>
@@ -38,24 +39,27 @@ const Footer = () => {
             <FooterLink href="#">
               <i className="fab fa-facebook-f">
                 <span style={{ marginLeft: "10px" }}>
-                  Facebook
+                  Saturnbook
                 </span>
               </i>
             </FooterLink>
             <FooterLink href="#">
               <i className="fab fa-instagram">
                 <span style={{ marginLeft: "10px" }}>
-                  Instagram
+                  Neptagram
                 </span>
               </i>
             </FooterLink>
             <FooterLink href="#">
               <i className="fab fa-twitter">
                 <span style={{ marginLeft: "10px" }}>
-                  Twitter
+                  JupTwitter
                 </span>
               </i>
             </FooterLink>
+          </Column>
+          <Column>
+          <img style={{ maxWidth:"80%"}} src={galaxy} alt="icone"/>
           </Column>
         </Row>
       </Container>

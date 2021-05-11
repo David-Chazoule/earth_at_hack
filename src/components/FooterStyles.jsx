@@ -2,13 +2,13 @@ import styled from 'styled-components';
    
 export const Box = styled.div`
   background: #404654;
-  position: absolute;
   bottom: 0;
   width: 100%;
+  border-top: solid 0.5px black;
   
    
   @media (max-width: 1000px) {
-    padding: 70px 30px;
+    
   }
 `;
    
@@ -24,13 +24,13 @@ export const Container = styled.div`
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
   
 `;
    
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 
+  grid-template-columns: repeat(4, 
                          minmax(185px, 1fr));
   grid-gap: 20px;
    
@@ -48,16 +48,16 @@ export const FooterLink = styled.a`
  
    
   &:hover {
-      color: #CBA646;
-      transition: 200ms ease-in;
+      color: #F48723;
+      transition: 100ms ease-in;
   }
 `;
    
 export const Heading = styled.p`
-  font-size: 24px;
+  font-size: 18px;
   color: white;
-  // margin-bottom: 40px;
-  font-weight: bold;
+  font-style: italic;
+  // font-weight: bold;
   text-decoration: underline white;
   text-underline-offset: 3px;
 `;
