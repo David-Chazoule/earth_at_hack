@@ -4,6 +4,7 @@ import DetailCard from './components/DetailCard';
 import { Switch, Route } from 'react-router';
 
 function App() {
+  const Appname = 'Mars°Ma°Zon';
   return (
     <Switch>
       <Route exact path="/">

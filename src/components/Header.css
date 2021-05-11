@@ -1,0 +1,13 @@
+.Header-container {
+    background-color: #404654;
+    height: 150px;
+    color: white;
+    text-align: center;
+    margin:0!important;
+    padding-top: 5px;
+}
+
+h1 {
+    font-family: Yeon Sung, sans serif ;
+    font-size: 40px;
+}
