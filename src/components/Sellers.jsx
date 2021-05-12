@@ -26,6 +26,7 @@ import Mars6 from './Assets/images/Mars6.gif';
 
 
 import './Sellers.css'
+import Footer from './Footer';
 
 export default function Sellers() {
   const sellers = [
@@ -60,7 +61,7 @@ export default function Sellers() {
       })
       }
       </div>
-      
+      <Footer />
     </div>
   )
 }

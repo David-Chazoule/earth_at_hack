@@ -1,6 +1,7 @@
 .detail-box{
 margin-top: 100px;
 height: 1000px;
+background-color: black;
 }
 
 .DetailTechnoContainer{
@@ -41,6 +42,13 @@ height: 1000px;
   font-size: 15px;
   padding: 5px;
 
+}
+
+.Detail-BTN-Container{
+  display: flex;
+  justify-content: space-evenly;
+  width: 800px;
+  
 }
 
 .text-detail {

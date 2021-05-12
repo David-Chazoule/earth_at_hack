@@ -9,7 +9,7 @@ export default function SellersCard(props) {
   const [name, setName] = useState ('');
   const [comment, setComment] = useState ();
   const [displayComment, setDisplayComment] = useState('');
-  const [showRating, setShowRating] = useState(false);
+  const [showRating, setShowRating] = useState(true);
 
   const handleClick = (e) =>{
     setShowRating(!showRating)
@@ -45,7 +45,7 @@ export default function SellersCard(props) {
     fetch('http://localhost:5000/sellerone', requestOptions).then((response) => response.json());
 
     setName('');
-    setComment();
+    setComment('');
     setRating('');
     
 
@@ -101,7 +101,7 @@ export default function SellersCard(props) {
         <button type="submit">Send</button>
       </form>
       <button className="btn-show"onClick={handleClick}>Show Rating</button>
-      {showRating && displayComment.map((comment)=>{
+      {!showRating && displayComment.map((comment)=>{
           return(
           
             <div className="comment-box">
