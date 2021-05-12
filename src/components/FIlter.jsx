@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 
-import TechnoCard from './TechnoCard';
+import Footer from './Footer';
 import Header from './Header';
+import TechnoCard from './TechnoCard';
 
 import './Filter.css';
 import App from '../App';
@@ -29,29 +30,31 @@ export default function Filter() {
   return (
     <div>
       <Header name={Appname} />
-    <div className="FilterBG">
-    <div className="FilterButtonContainer">
-      <select className="TechnoSelect" onClick={handleSelect}>
-        <option value="">Select a category...</option>
-        <option value="aerospace">aerospace</option>
-        <option value="information technology and software">information technology and software</option>
-        <option value="sensors">sensors</option>
-        <option value="mechanical and fluid systems">mechanical and fluid systems</option>
-        <option value="materials and coatings">materials and coatings</option>
-        <option value="instrumentation">instrumentation</option>
-        <option value="manufacturing">manufacturing</option>
-        <option value="power generation and storage">power generation and storage</option>
-        <option value="electrical and electronics">electrical and electronics</option>
-      </select>
-    </div>
-    <div className="CardContainer">
-    {showTechnos && technos.results
-    .filter((techno) => (techno[5].includes(`${selectedTechno}`)))
-    .map((techno)=>{
-      return <TechnoCard name={techno[1]} image={techno[10]} id={techno[12]} />
+        <div className="FilterBG">
+          <div className="FilterButtonContainer">
+             <select className="TechnoSelect" onClick={handleSelect}>
+                <option value="">Select a category...</option>
+                <option value="aerospace">aerospace</option>
+                <option value="information technology and software">information technology and software</option>
+                <option value="sensors">sensors</option>
+                <option value="mechanical and fluid systems">mechanical and fluid systems</option>
+                <option value="materials and coatings">materials and coatings</option>
+                <option value="instrumentation">instrumentation</option>
+                <option value="manufacturing">manufacturing</option>
+                <option value="power generation and storage">power generation and storage</option>
+                <option value="electrical and electronics">electrical and electronics</option>
+             </select>
+           </div>
+          <div className="CardContainer">
+            {showTechnos && technos.results
+             .filter((techno) => (techno[5].includes(`${selectedTechno}`)))
+             .map((techno)=>{
+            return <TechnoCard name={techno[1]} image={techno[10]} id={techno[12]} />
     })}
+          </div>
+      </div>
     </div>
-    </div>
-    </div>
+    
+
   )
 }
