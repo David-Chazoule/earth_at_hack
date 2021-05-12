@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
+
 import './ShopperForm.css';
 
 
-function ShopperForm() {
+export default function ShopperForm() {
   const [userFirstName, setUserFirstName] = useState('');
   const [userLastName, setUserLastName] = useState('');
   const [userEmail, setUserEmail] = useState('');
@@ -61,5 +62,3 @@ function ShopperForm() {
     </div>
   );
 }
-
-export default ShopperForm;

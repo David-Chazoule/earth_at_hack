@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
-import ShopperForm from '../components/ShopperForm';
-
 import { Link } from 'react-router-dom'
+
+import ShopperForm from '../components/ShopperForm';
 
 import './DetailTechno.css';
 
 
 export default function DetailTechno(props) {
+  const [showShopperForm, setShowShopperForm] = useState (false);
 
-const [showShopperForm, setShowShopperForm] = useState (false);
+  const handleClick = () => {
+    setShowShopperForm(!showShopperForm);
+  };
 
-const handleClick = () => {
-  setShowShopperForm(!showShopperForm);
-
-}
   return (
     <div className="detail-box">
 

@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Box,
   Container,
@@ -8,8 +9,7 @@ import {
   Heading,
 } from "./FooterStyles";
 
-  import galaxy from "./Assets/images/galaxie.png"
-
+import galaxy from "./Assets/images/galaxie.png"
   
 const Footer = () => {
   return (

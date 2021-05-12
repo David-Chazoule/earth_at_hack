@@ -4,10 +4,6 @@ import styled from 'styled-components';
 export const Box = styled.div`
   background: #CE490C;
   width: 100%;
- 
-  
-   
- 
 `;
    
 export const Container = styled.div`
@@ -17,20 +13,16 @@ export const Container = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     border-top: solid 0.5px black;
-
     @media (max-width: 1000px) {
     font-size:20px;
-    }
-   
+    } 
 `
-   
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
   
 `;
-   
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 
@@ -42,7 +34,6 @@ export const Row = styled.div`
                            minmax(200px, 1fr));
   }
 `;
-   
 export const FooterLink = styled.a`
   color: white;
   margin-bottom: 20px;

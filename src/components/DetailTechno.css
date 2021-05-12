@@ -1,11 +1,11 @@
 .detail-box{
-margin-top: 100px;
-height: 1000px;
-background-color: black;
+  margin-top: 100px;
+  height: 1000px;
+  background-color: black;
 }
 
 .DetailTechnoContainer{
-   display: flex; 
+  display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,6 @@ background-color: black;
   border: solid 1px white;
   border-radius: 5px;
   box-shadow: 0 8px 24px 0 rgba(0,0,0,.24);
-  
 }
 
 .DetailTechnoImage{
@@ -41,14 +40,12 @@ background-color: black;
   border: 1px solid rgb(56, 54, 54);
   font-size: 15px;
   padding: 5px;
-
 }
 
 .Detail-BTN-Container{
   display: flex;
   justify-content: space-evenly;
   width: 800px;
-  
 }
 
 .text-detail {

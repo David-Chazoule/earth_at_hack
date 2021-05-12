@@ -1,13 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Mars3 from './Assets/Mars.mp4';
 
-
+import Mars3 from './Assets/mp4/Mars.mp4';
 import './LandingPage.css';
 
-
-
-function LandingPage (){
+export default function LandingPage (){
   return(
     <div className="landingPage-container">
       <div className="video-box">
@@ -28,6 +25,3 @@ Sale of NASA technology and more.</h2>
     </div>
   );
 }
-
-
-export default LandingPage;

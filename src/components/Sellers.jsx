@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Header from './Header';
+import Footer from './Footer';
 import SellersCard from './SellersCard';
-
 
 import Ingenuity from './Assets/images/ingen.png';
 import Perseverance from './Assets/images/perseverance.gif';
@@ -23,10 +23,7 @@ import Mars2 from './Assets/images/Mars2.jpg';
 import Mars3 from './Assets/images/Mars3.jpg';
 import Mars6 from './Assets/images/Mars6.gif';
 
-
-
 import './Sellers.css'
-import Footer from './Footer';
 
 export default function Sellers() {
   const sellers = [
