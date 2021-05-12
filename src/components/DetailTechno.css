@@ -1,13 +1,19 @@
+.detail-box{
+margin-top: 100px;
+height: 1000px;
+}
+
 .DetailTechnoContainer{
-  display: flex;
+   display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
-  width: 60vw;
-  border: solid 1px black;
+  height: 500px;
+  width: 500px;
+  border: solid 1px white;
   border-radius: 5px;
   box-shadow: 0 8px 24px 0 rgba(0,0,0,.24);
+  
 }
 
 .DetailTechnoImage{
@@ -16,3 +22,27 @@
   box-shadow: 0 8px 24px 0 rgba(0,0,0,.24);
 }
 
+.DetailTechnoButton{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  justify-content: right;
+  color: white;
+  background-color: #ce531b;
+  cursor: pointer;
+  border: 1px solid rgb(56, 54, 54);
+  font-size: 10px;
+}
+
+.btn-want{
+  color: white;
+  background-color: rgb(88, 35, 10);
+  cursor: pointer;
+  border: 1px solid rgb(56, 54, 54);
+  font-size: 15px;
+  padding: 5px;
+
+}
+
+.text-detail {
+  margin : 20px;
+}

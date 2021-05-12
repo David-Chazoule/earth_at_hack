@@ -1,6 +1,6 @@
 .Form-container {
-    margin-top:140px; 
-    border: black 1px solid;
+    margin-top:40px; 
+    border: white 1px solid;
     border-radius: 5px;
     box-shadow: 0 8px 24px 0 rgba(0,0,0,.24);
 }
@@ -17,7 +17,12 @@ textarea {
 }
 
 .ShopperForm {
-  
+    color: white;
+    background-color: rgb(88, 35, 10);
+    cursor: pointer;
+    border: 1px solid rgb(56, 54, 54);
+    font-size: 15px;
+    padding: 5px;
 }
 
   
