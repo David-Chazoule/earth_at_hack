@@ -25,6 +25,9 @@ const handleClick = () => {
       <Link to="/technos">
       <button className="DetailTechnoButton">GO BACK</button>
     </Link>
+      <Link to="/sellers">
+      <button className="DetailTechnoButton">Contact Seller</button>
+    </Link>
     </div>
     <div>
       {showShopperForm &&
