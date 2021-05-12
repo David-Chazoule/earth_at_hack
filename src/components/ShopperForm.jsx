@@ -34,22 +34,22 @@ function ShopperForm() {
       <form onSubmit={handleSubmit}>
         <div className="Form-container">
           <div>
-            <label htmlFor="name">firstname</label>
+            <label htmlFor="name">Firstname</label>
             <br></br>
-            <input className="input" value={userFirstName} type="text" onChange={(e) => setUserFirstName(e.target.value)} required />
+            <input className="input" placeholder="Type your firstname here..." value={userFirstName} type="text" onChange={(e) => setUserFirstName(e.target.value)} required />
           </div>
           <div>
-            <label htmlFor="name">lastname</label>
+            <label htmlFor="name">Lastname</label>
             <br></br>
-            <input className="input" value={userLastName} type="text" onChange={(e) => setUserLastName(e.target.value)} required />
+            <input className="input" placeholder="Type your lastname here..." value={userLastName} type="text" onChange={(e) => setUserLastName(e.target.value)} required />
           </div>
           <div>
-            <label htmlFor="name">e-mail</label>
+            <label htmlFor="name">E-mail</label>
             <br></br>
-            <input className="input" value={userEmail} type="text" onChange={(e) => setUserEmail(e.target.value)} required />
+            <input className="input" placeholder="Type your email here..." value={userEmail} type="text" onChange={(e) => setUserEmail(e.target.value)} required />
           </div>
           <div>
-            <label htmlFor="message">your question</label>
+            <label htmlFor="message">Your question</label>
             <br></br>
             <textarea value={userComment} type="text" onChange={(e) => setUserComment(e.target.value)} required></textarea>
           </div>

@@ -1,14 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .Header-container {
-    background-color: #404654;
+     background-color: #404654; 
     height: 150px;
-    width:100%;
-    color: white;
+    color:white;
     text-align: center;
     margin:0!important;
     padding-top: 5px;
+    background :linear-gradient(360deg, rgb(7, 5, 5), #ce490cef);
+    
+    width: 100%;
 }
 
 .Header-Title {
-    font-family: Yeon Sung, sans serif ;
-    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 60px;
+    margin: 0;
+}
+
+.slogan-title{
+    margin: 4px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Press Start 2P', cursive;
 }
