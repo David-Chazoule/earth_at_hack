@@ -2,9 +2,8 @@
    display: flex; 
   justify-content: center;
   text-align: center;
-  align-items: center;
   width: 100vw;
-  height:auto; 
+  height:150vh; 
   background-color: black;
   color: white;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   Box,
   Container,
@@ -8,8 +9,7 @@ import {
   Heading,
 } from "./FooterStyles";
 
-  import galaxy from "./Assets/images/galaxie.png"
-
+import galaxy from "./Assets/images/galaxie.png"
   
 const Footer = () => {
   return (
@@ -32,7 +32,7 @@ const Footer = () => {
             <FooterLink href="https://www.linkedin.com/in/anne-laure-ferrari-480676209/" target="blank">AL</FooterLink>
           </Column>
           <Column>
-            <Heading>Liens utiles</Heading>
+            <Heading>Links</Heading>
             <FooterLink href="https://www.leboncoin.fr/" target="_blank">Le très bon coin</FooterLink>
             <FooterLink href="https://starwars.fandom.com/fr/wiki/Galaxie" target="_blank">Galaxies voisines</FooterLink>
             <FooterLink href="https://intl.startrek.com/" target="_blank">Star Trek</FooterLink>

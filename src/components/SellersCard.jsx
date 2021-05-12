@@ -2,33 +2,30 @@ import React, { useState, useEffect } from 'react';
 
 import './SellersCard.css';
 
-
 export default function SellersCard(props) {
-
   const [rating, setRating] = useState ('');
   const [name, setName] = useState ('');
   const [comment, setComment] = useState ();
   const [displayComment, setDisplayComment] = useState('');
-  const [showRating, setShowRating] = useState(false);
-
-  const handleClick = (e) =>{
-    setShowRating(!showRating)
-  }
+  const [showRating, setShowRating] = useState(true);
 
   useEffect(() => {
     fetch('http://localhost:5000/sellerone/'+ props.name)
     .then((resp)=> resp.json())
     .then((data)=>{
       setDisplayComment(data);
-    console.log(displayComment);
+      console.log(displayComment);
     })
-    
   }, []);
+
+  const handleClick = (e) =>{
+    setShowRating(!showRating)
+  };
 
   const handleChange = (e) => {
      setRating(e.target.value);
      console.log(rating)
-  }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -45,21 +42,19 @@ export default function SellersCard(props) {
     fetch('http://localhost:5000/sellerone', requestOptions).then((response) => response.json());
 
     setName('');
-    setComment();
+    setComment('');
     setRating('');
-    
-
-  }
+  };
 
   const handleName = (e) => {
       setName(e.target.value);
       console.log(name);
-  }
+  };
 
   const handleComment = (e) => {
     setComment(e.target.value);
     console.log(comment);
-  }
+  };
 
   return (
     <div className="SellersCardContainer">
@@ -101,7 +96,7 @@ export default function SellersCard(props) {
         <button type="submit">Send</button>
       </form>
       <button className="btn-show"onClick={handleClick}>Show Rating</button>
-      {showRating && displayComment.map((comment)=>{
+      {!showRating && displayComment.map((comment)=>{
           return(
           
             <div className="comment-box">

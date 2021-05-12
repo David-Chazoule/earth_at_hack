@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Header from './Header';
+import Footer from './Footer';
 import SellersCard from './SellersCard';
-
 
 import Ingenuity from './Assets/images/ingen.png';
 import Perseverance from './Assets/images/perseverance.gif';
@@ -22,8 +22,6 @@ import Viking2 from './Assets/images/Viking2.jpg';
 import Mars2 from './Assets/images/Mars2.jpg';
 import Mars3 from './Assets/images/Mars3.jpg';
 import Mars6 from './Assets/images/Mars6.gif';
-
-
 
 import './Sellers.css'
 
@@ -60,7 +58,7 @@ export default function Sellers() {
       })
       }
       </div>
-      
+      <Footer />
     </div>
   )
 }
