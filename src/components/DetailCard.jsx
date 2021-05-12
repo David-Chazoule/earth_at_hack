@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import DetailTechno from './DetailTechno';
 
+
 import './DetailCard.css';
 import Header from './Header';
 
@@ -28,6 +29,7 @@ export default function DetailCard() {
     <div className="DetailCardContainer">
      <DetailTechno name={technoDetails[1]} image={technoDetails[10]} presentation={technoDetails[3]} />
     </div>
+    
   </div>
   )
 }
