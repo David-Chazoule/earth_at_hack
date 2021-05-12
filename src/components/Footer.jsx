@@ -14,8 +14,10 @@ const Footer = () => {
     <Box>
       <h2 style={{ color: "black", 
                    textAlign: "center", 
-                   fontFamily: "Yeon Sung, sans serif",
+                   fontFamily: "'Press Start 2P",
                    fontSize: "40px",
+                   margin:0,
+                   padding:"15px"
                    }}>
         Mars°Ma°Zon
       </h2>

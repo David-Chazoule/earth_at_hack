@@ -1,15 +1,13 @@
 import styled from 'styled-components';
+
    
 export const Box = styled.div`
-  background: #404654;
-  bottom: 0;
+  background: #CE490C;
   width: 100%;
-  border-top: solid 0.5px black;
+ 
   
    
-  @media (max-width: 1000px) {
-    
-  }
+ 
 `;
    
 export const Container = styled.div`
@@ -18,6 +16,11 @@ export const Container = styled.div`
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
+    border-top: solid 0.5px black;
+
+    @media (max-width: 1000px) {
+    font-size:20px;
+    }
    
 `
    

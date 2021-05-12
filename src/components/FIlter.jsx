@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-import Footer from './Footer';
+import Footer from '../components/Footer';
 import Header from './Header';
 import TechnoCard from './TechnoCard';
 
@@ -52,6 +52,7 @@ export default function Filter() {
             return <TechnoCard name={techno[1]} image={techno[10]} id={techno[12]} />
     })}
           </div>
+      <Footer />
       </div>
     </div>
     
