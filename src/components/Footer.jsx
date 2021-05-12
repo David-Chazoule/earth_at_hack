@@ -7,7 +7,9 @@ import {
   FooterLink,
   Heading,
 } from "./FooterStyles";
+
   import galaxy from "./Assets/images/galaxie.png"
+
   
 const Footer = () => {
   return (
