@@ -24,3 +24,17 @@
     font-size: 15px;
     font-family: 'Press Start 2P', cursive;
 }
+
+@media (max-width: 576px) { 
+
+.Header-Title {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.slogan-title{
+    margin: 20px;
+    font-size: 8px;
+}
+
+}

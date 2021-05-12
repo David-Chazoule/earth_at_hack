@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import DetailTechno from './DetailTechno';
 import Footer from '../components/Footer';
 
+
 import './DetailCard.css';
 import Header from './Header';
 
