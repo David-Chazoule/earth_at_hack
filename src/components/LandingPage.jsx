@@ -17,7 +17,8 @@ function LandingPage (){
       
        <div className="intro-btn-box"> 
       <div className="landing-intro">
-        <h1 className="txt-intro">Lorem ipsum dolor sit amet.Et molestiae odio eos quasi ullam ut autem porro in quam quia. Eum iusto repellat est rerum consequatur At fuga voluptate eos asperiores doloribus ex nihil quibusdam in saepe nesciunt.</h1>
+        <h1 className="txt-intro">Welcome to MARS ° MA ° ZONE. <br/> The first intergalactic commercial counter.
+Sale of NASA technology and more.</h1>
         <Link to="/technos">
         <button className="btn-enter" type="button">ENTER</button>
         </Link>
