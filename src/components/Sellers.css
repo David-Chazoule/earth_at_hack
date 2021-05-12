@@ -1,0 +1,8 @@
+.Sellers-Container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Sellers-Main{
+  background-color: black;
+}
