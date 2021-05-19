@@ -14,7 +14,7 @@ export default function Filter() {
 
   const handleSelect = (e) => {
     setSelectedTechno(e.target.value);
-  };
+  }
 
   useEffect(() => {
     fetch('https://api.nasa.gov/techtransfer/patent/?engine&api_key=zIGBlPJ9IjuQHnSeokX4LqZ9QPlri9jtdNaYJUZz')
@@ -23,7 +23,7 @@ export default function Filter() {
       setTechnos(data);
 
     setShowTechnos(!showTechnos);
-  })}, []);
+  })}, [])
 
   
   return (

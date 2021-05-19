@@ -64,9 +64,11 @@ export default function SellersCard(props) {
       <form onSubmit={handleSubmit} className="SellersCardForm">
 
         <label  className="Rating-Span">Name</label>
+
         <input value={name} onChange={handleName}type="text"></input>
 
         <label className="Rating-Span">Comment</label>
+        
         <input value={comment} onChange={handleComment} type="text"></input>
 
         <label>Rating</label>
@@ -98,13 +100,11 @@ export default function SellersCard(props) {
       <button className="btn-show"onClick={handleClick}>Show Rating</button>
       {!showRating && displayComment.map((comment)=>{
           return(
-          
             <div className="comment-box">
             <p className="Comment-P">{comment.comment}</p>
             <p className="Comment-P">{comment.author}</p>
             <p className="Comment-P">Rating : {comment.rating}</p>
             </div>
-            
           )
         })
       }
