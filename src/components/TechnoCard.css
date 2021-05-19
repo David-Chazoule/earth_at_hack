@@ -1,0 +1,36 @@
+.TechnoCardContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid rgb(110, 106, 106);
+  height: 300px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px 0 rgba(241, 237, 237, 0.15);
+  background-color: rgba(0, 0, 0, 0.911);
+  color: white;
+  font-size: 20px;
+}
+
+.card-name {
+  margin:10px 0 20px 0 ;
+}
+
+.TechnoImage{
+  width: 180px;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.ShowDetails{
+  margin-top: 40px;
+ margin-bottom: 15px;
+  width: 120px;
+  color: white;
+  background-color: rgb(88, 35, 10);
+  cursor: pointer;
+  border: 1px solid rgb(56, 54, 54);
+}

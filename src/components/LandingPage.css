@@ -1,0 +1,97 @@
+.landingPage-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  margin-top: 80px;
+}
+
+.txt-intro{
+  display: inline-block;
+  margin: 0 200px 100px 200px;
+}
+
+ .video-box{
+  margin-bottom: 0px;
+  width: 100%;
+  height: 100%;
+} 
+
+.Mars-video {
+width: 100%;
+height: 100vh;
+overflow: hidden;
+object-fit: cover;
+margin-bottom: 0;
+}
+
+.btn-enter{
+  color: black;
+  width: 250px;
+  height: 50px;
+  margin-top: 380px;
+}
+
+.btn-enter{
+  width: 250px;
+  height: 50px;
+  margin-top: 400px;
+  font-size: 18px;
+  color: #ce490cef;
+  border:1px solid #ce490cef;
+  border-radius: 15px;
+  background-color: black;
+  opacity: 0.6;
+  cursor : pointer;
+}
+
+.btn-enter:hover{
+ color: black;
+ background-color: #ce490cef;
+ opacity: 1;
+}
+
+.intro-btn-box{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) { 
+  .landing-intro{
+    font-size: 8px;
+  }
+.txt-intro {
+  margin: 0px 50px 20px 50px;
+  }
+
+.btn-enter {
+  width: 180px;
+  height: 40px;
+  margin-top: 300px;
+  }
+
+.landing-intro{
+  margin-top: 80px ;
+  margin-bottom: 220px;
+  }
+
+.Mars-video{
+  height: 1000px;
+  }
+}

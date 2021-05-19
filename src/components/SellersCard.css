@@ -1,0 +1,61 @@
+.SellersCardContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid rgb(110, 106, 106);
+  box-sizing: border-box;
+  min-height: 600px;
+  width: 400px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px 0 rgba(241, 237, 237, 0.15);
+  background-color: rgba(0, 0, 0, 0.911);
+  color: white;
+  font-size: 20px;
+   
+}
+
+.SellersCardAvatar{
+  height: 150px;
+  width: 150px;
+  border: 8px solid black;
+  border-radius: 50%;
+}
+
+.SellersCardForm{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Rating-Container{
+  display: flex;
+  flex-direction: row;
+}
+
+.Rating-Span{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid white;
+  width: 300px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px 0 rgba(241, 237, 237, 0.15);
+}
+.btn-show {
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.Comment-P{
+  margin: 0;
+  padding: 0;
+}

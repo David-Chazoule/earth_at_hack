@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import Filter from './components/FIlter';
 import './App.css';
+import DetailCard from './components/DetailCard';
+import { Switch, Route } from 'react-router';
+import LandingPage from './components/LandingPage';
+import Sellers from './components/Sellers';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route exact path="/">
+        <LandingPage />
+      </Route>
+      <Route exact path="/technos">
+        <Filter />
+      </Route>
+      <Route path="/technos/:id">
+        <DetailCard />
+      </Route>
+      <Route path="/sellers">
+        <Sellers />
+      </Route>
+    </Switch>
   );
 }
 

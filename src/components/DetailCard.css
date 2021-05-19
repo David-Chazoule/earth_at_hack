@@ -1,0 +1,9 @@
+.DetailCardContainer{
+   display: flex; 
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height:150vh; 
+  background-color: black;
+  color: white;
+}
