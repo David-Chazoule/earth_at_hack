@@ -5,6 +5,7 @@ import Mars3 from './Assets/mp4/Mars.mp4';
 import './LandingPage.css';
 
 export default function LandingPage (){
+  
   return(
     <div className="landingPage-container">
       <div className="video-box">
